@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-gray-900 text-white font-sans">
   <!-- section one-->
   <header class="flex justify-between items-center px-6 py-4 bg-gray-800">
     <h1 class="text-xl font-bold">SoulDesign</h1>
     <nav>
-      <ul class="flex space-x-6">
+      <div><i class="fa-solid fa-bars sm:hidden"></i></div>
+
+      <ul class="sm:flex space-x-6 hidden">
         <li><a href="#" class="hover:text-green-500">Home</a></li>
         <li><a href="#" class="hover:text-green-500">About Me</a></li>
         <li><a href="#" class="hover:text-green-500">Contact</a></li>
@@ -22,29 +25,34 @@
   
 
   <!-- Hero Section -->
-  <section class="text-center py-16 px-4 md:px-8">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-green-500">CREATIVE UI DESIGNER</h2>
-    <div class="mt-6 flex flex-col md:flex-row justify-center gap-4">
-      <a href="#" class="bg-green-500 text-gray-900 px-6 py-3 rounded hover:bg-green-600">Hire Me</a>
-      <a href="#" class="border border-green-500 px-6 py-3 rounded hover:bg-green-500 hover:text-gray-900">Download CV</a>
+  <div class="text-center py-10 px-4 md:px-4  lg:flex  gap-40">
+    <div class=" sm:mt-11 mt-2 justify-center gap-4   sm:ml-8  ml-8  ">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white ">CREATIVE UI <br><span class=" text-green-400">DESIGNER</span></h2>
+      <div class=" flex gap-6 ml-8 ">
+      <a href="#" class="mt-8 border bg-green-500 text-gray-900 px-5 py-3  rounded-[12px] hover:bg-green-600">Hire Me</a>
+      <a href="#" class=" mt-8 border border-green-500 px-5 py-3 rounded-[12px] hover:bg-green-500 hover:text-gray-900">Download CV</a>
     </div>
-    <div class="mt-12 flex justify-center">
+    </div>
+    <div class=" sm:-mt-10  ml-10 flex ">
       <img src="https://hottabi489.neocities.org/img/main/image.svg" alt="Illustration" class="w-full max-w-md">
     </div>
-  </section>
+  </div>
 
   <!-- About Me Section -->
-  <section class="py-12 px-6 bg-gray-800">
-    <div class="text-center md:text-left max-w-4xl mx-auto">
-      <h3 class="text-2xl md:text-3xl font-bold mb-4">About me</h3>
-      <p class="text-gray-400 mb-6 leading-relaxed">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit lorem ut velit vehicula, eu sagittis nibh feugiat. Praesent vel nisi at nisi bibendum interdum.
+  <div class=" sm:flex  py-6 px-0  bg-gray-800">
+  
+    <div class="text-center md:text-left max-w-4xl mx-auto gl:ml-16 ">
+      <h3 class="text-2xl md:text-5xl font-bold mb-4 mt-10">About  <span class="text-green-300"> me</span></h3>
+      <p class="text-gray-400 mb-6 leading-relaxed mr-3 mt-5 ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Nullam suscipit lorem ut velit vehicula, eu sagittis nibh <br>feugiat. Praesent vel nisi at nisi bibendum interdum. Lorem ipsum <br> dolor sit amet consectetur adipisicing elit. Modi esse <br> accusantium at? Facere eveniet necessitatibus consectetur <br> pariatur laboriosam, exercitationem architecto consequuntur nam <br> voluptatem in quidem nesciunt ipsam praesentium.... <span class="text-1xl font-semibold text-white">  Read more</span>
       </p>
     </div>
-    <div class="flex justify-center">
+    <div class=" sm:flex justify-center  mr-20 ml-16  ">
       <img src="https://hottabi489.neocities.org/img/about/image.svg" alt="About Me Illustration" class="w-full max-w-md">
     </div>
-  </section>
+  
+</div>
+  
 
   <!-- Recent Works Section -->
   <section class="py-16 px-4 md:px-8 bg-gray-800">
@@ -55,11 +63,17 @@
       <button class="px-6 py-1 border border-green-500 rounded-[200px] hover:bg-green-500 hover:text-gray-900">UX</button>
       <button class="px-6 py-1 border border-green-500 rounded-[200px] hover:bg-green-500 hover:text-gray-900">Web Design</button>
     </div>
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:mt-6">
-      <img src="https://hottabi489.neocities.org/img/works/items/01.png" alt="Work 1" class="rounded-md shadow-md hover:shadow-lg">
-      <img src="https://hottabi489.neocities.org/img/works/items/02.png" alt="Work 2" class="rounded-md shadow-md hover:shadow-lg">
-      <img src="https://hottabi489.neocities.org/img/works/items/03.png" alt="Work 3" class="rounded-md shadow-md hover:shadow-lg">
+    <div class="sm:grid sm:gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:mt-6 mt-10 ml-[50px]">
+      <div class="bg-gray-500 w-[290px] h-[220px] flex items-center rounded-lg shadow-md hover:shadow-lg">
+      <img src="https://hottabi489.neocities.org/img/works/items/01.png" alt="Work 1" class="rounded-md  pt-[10px] w-[250px] h-[150px] ml-[20px]">
+      </div>
+      <div class="bg-gray-500 w-[290px] h-[220px] flex items-center rounded-lg shadow-md hover:shadow-lg">
+      <img src="https://hottabi489.neocities.org/img/works/items/02.png" alt="Work 2" class="rounded-md w-[250px] h-[150px] ml-[20px] pt-[70px]">
     </div>
+    <div class="bg-gray-500 w-[290px] h-[220px] flex items-center rounded-lg shadow-md hover:shadow-lg">
+      <img src="https://hottabi489.neocities.org/img/works/items/03.png" alt="Work 3" class="rounded-md w-[250px] h-[150px] ml-[20px]  pt-[70px]">
+    </div>
+  </div>
   </section>
 <!-- Contact Section -->
 <section class="py-16 px-6">
